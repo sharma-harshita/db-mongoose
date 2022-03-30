@@ -1,1 +1,2 @@
 node_modules
+# This is the file in which if you do not want any file or folder to be pushed to github then you can add its location or path in the file.
