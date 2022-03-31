@@ -71,7 +71,9 @@ const teacherSchema = mongoose.Schema({
     },
     age : {
         type : Number,
-        required : true
+        required : true,
+        min : 25,
+        max : 45
     },
     email : String
 })
@@ -112,7 +114,6 @@ TeacherModel.find({age : {$lt : 30}}, (err, res)=>{
     if (err) console.log(err);
     console.log(res);
 })
-
 
 // Updating the document . 
 
